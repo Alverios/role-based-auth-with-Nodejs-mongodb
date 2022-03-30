@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08"
+            aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="justify-content-lg-start">
+            <a style="color: #fff; font-size:bolder; text-decoration: none;" href="#">PARKVILLE SYSTEM</a>
+        </div>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarsExample08">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <% if (user) { %>
+                    <% if (user.role === 'SUPER-ADMIN') { %>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+                    </li>
+                    <% } %>
+                <% } %>
+                <% if (user) { %>
+                    <% if (user.role === 'PARKING-ADMIN' || 'SUPER-ADMIN') { %>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-bs-toggle="dropdown"
+                        aria-expanded="false">Parking Unit</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown08">
+                            <li><a class="dropdown-item text-center" href="/trucks/trucks">Trucks</a></li>
+                            <li><a class="dropdown-item text-center" href="/taxis/taxis">Taxis</a></li>
+                            <li><a class="dropdown-item text-center" href="/coasters/coasters">Coasters</a></li>
+                            <li><a class="dropdown-item text-center" href="/bodas/bodas">Boda-Bodas</a></li>
+                            <li><a class="dropdown-item text-center" href="/cars/cars">Personal Cars</a></li>
+                        </ul>
+                    </li>
+                    <% } %>
+                <% } %>
+
+                <% if (user) { %>
+                    <% if (user.role === 'TYRE-ADMIN' || 'SUPER-ADMIN') { %>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/tyre_clinic/tyre_clinic">Tyre Clinic</a>
+                        </li>
+                    <% } %>
+                    <% if (user.role === 'BATTERY-ADMIN' || 'SUPER-ADMIN') { %>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/battery/battery">Battery Shop</a>
+                        </li>
+                    <% } %>
+                <% } %>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-bs-toggle="dropdown"
+                        aria-expanded="false">Settings</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown08">
+
+                        <% if (user) { %>
+                            <li><a class="dropdown-item" href="/user/profile">Profile</a></li>
+                            <% if (user.role === 'SUPER-ADMIN') { %>
+                                <li><a class="dropdown-item" href="/admin/users">Manage Users</a></li>
+                            <% } %>
+                            <li><a class="dropdown-item" href="/auth/logout">Logout</a></li>
+                            
+                        <% } else { %>
+                            <li><a class="dropdown-item" href="/auth/register">Register</a></li>
+                            <li><a class="dropdown-item" href="/auth/login">Login</a></li>
+                        <% } %>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

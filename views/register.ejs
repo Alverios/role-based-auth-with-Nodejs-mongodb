@@ -1,0 +1,34 @@
+<%- include('./layouts/header') %>
+  <div class="row mt-5">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4 col-md-12">
+      <div class="card profile border-dark">
+        <div class="card-body border-dark">
+          <form class="p-5" action="/auth/register" method="post">
+            <h1 class="h3 mb-3 fw-normal text-center">Register For An Account!</h1>
+            <label for="floatingInput">Email address</label>
+            <input type="text" name="email" id="email" value="<% locals.email ? email : '' %>"  class="form-control p-1 border-dark mb-1"
+              placeholder="name@parkville.com">
+
+            <label for="floatingPassword">Password</label>
+            <input type="password" name="password" id="password" class="form-control border-dark mb-1"
+              placeholder="Password">
+
+            <label for="floatingPassword2">Confirm Password</label>
+            <input type="password" name="password2" id="password2" class="form-control border-dark mb-1"
+              placeholder="Confirm Password">
+
+
+            <input class="w-100 btn btn-lg btn-primary" type="submit" value="Register" />
+          </form>
+          <div class="text-center">
+            <p>Already Have An Account? <span><a class="btn btn-success" href="/auth/login">Login</a></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4"></div>
+  </div>
+
+
+  <%- include('./layouts/footer') %>

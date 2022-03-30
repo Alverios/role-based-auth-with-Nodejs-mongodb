@@ -1,0 +1,17 @@
+<% if (locals.messages) { %>
+    <div class="row mt-5">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4 col-md-12">
+            <div class="messages mx-0 ">
+                <ul class="messages">
+                  <% Object.keys(messages).forEach((key) => { %> <%
+                  messages[key].forEach((message) => { %>
+                  <li class="<%= key %> text-center p-1 mb-1"><%= message %></li>
+                  <% }) %> <% }) %>
+                </ul>
+              </div>
+        </div>
+        <div class="col-lg-4"></div>
+    </div>
+
+    <% } %>

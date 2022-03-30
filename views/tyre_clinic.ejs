@@ -1,0 +1,105 @@
+<%- include('./layouts/header') %>
+<div class="row px-5">
+    <div class="col-lg-3 col-md-12 mb-2">
+        <div class="card border-dark">
+            <div class="card-header border-dark">
+                <h4 class="card-title text-center">Tyre Clinic</h4>
+            </div>
+            <div class="card-body p-4">
+                <form class="mb-3">
+                    <label for="example-text-input" class="form-label">Owners Name</label>
+                    <input class="form-control mb-2 border-dark" type="text" value="" placeholder="Owners Name"
+                        id="example-text-input">
+
+                    <label for="example-password-input" class="form-label">Number Plate</label>
+                    <input class="form-control border-dark" type="text" placeholder="Number Plate"
+                        id="example-password-input">
+
+                    <label class="form-label">Service Received</label>
+                    <select class="form-select border-dark">
+                        <option>Tyre Pressure</option>
+                        <option>Valves</option>
+                        <option>Puncture Fix</option>
+                        <option>Tyre Purchase</option>
+                    </select>
+
+                    <label class="form-label">Intended Car</label>
+                    <select class="form-select border-dark">
+                        <option>Select</option>
+                        <option>Taxi</option>
+                        <option>Personal Cars</option>
+                        <option>Trucks</option>
+                        <option>Coasters</option>
+                        <option>Boda-Boda</option>
+                    </select>
+
+                    <label class="form-label">Tyres Size</label>
+                    <select class="form-select border-dark">
+                        <option>Select</option>
+                        <option>155/70 R13</option>
+                        <option>155/80 R12</option>
+                        <option>165/50 R15</option>
+                        <option>165/55 R14</option>
+                        <option>155/70 R15</option>
+                        <option>155/80 R13</option>
+                        <option>165/55 R13</option>
+                        <option>165/55 R13</option>
+                        <option>165/55 R13</option>
+                    </select>
+                    <label for="example-email-input" class="form-label">Cost of Service</label>
+                    <input class="form-control border-dark" type="text" placeholder="cost of service"
+                        id="example-email-input">
+                        <button type="button" class="btn btn-success btn-lg w-100 mt-3">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div> <!-- end col -->
+    <div class="col-lg-9 col-md-12">
+
+        <div class="card border-dark">
+            <div class="card-header border-dark">
+                <h4 class="card-title text-center">Tyre Clinic Details</h4>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table align-middle mb-0 border-dark">
+
+                        <thead>
+                            <tr>
+                                <th>Owners Name</th>
+                                <th>Number Plate</th>
+                                <th>Tyre Size</th>
+                                <th>Service Received</th>
+                                <th>Intended Car</th>
+                                <th>Cost of Service</th>
+                                <th>Options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Debborah Atwine</th>
+                                <th>UBG 873J</th>
+                                <th>155/80 R13</th>
+                                <th>Tyre Puncture Fix</th>
+                                <th>Taxi</th>
+                                <th>5000</th>
+                                <td class="justify-content-center">
+                                    <button type="button"
+                                        class="btn btn-danger btn-sm mb-1 w-xs">Delete</button>
+                                    <button type="button"
+                                        class="btn btn-dark btn-sm mb-1 w-xs">Edit</button>
+                                    <button type="button"
+                                        class="btn btn-success btn-sm mb-1 w-xs">View</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- end card body -->
+        </div>
+        <!-- end card -->
+    </div>
+    <!-- end col -->
+</div>
+<%- include('./layouts/footer') %>

@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 500;
+}
+
+ul {
+  padding: 0px;
+}
+
+ul.messages {
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  overflow: hidden;
+  border: 1px solid #fff;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.messages .error {
+  background-color: #f87171;
+}
+
+.messages .success {
+  background-color: #6ee7b7;
+}
+
+.messages .warning {
+  background-color: #fcd34d;
+}
+
+.messages .info {
+  background-color: #93c5fd;
+}
+
+.card-text {
+  font-weight: bolder;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #198754;
+}
+
+
+.testimonial-card .card-up {
+  height: 500px;
+  overflow: hidden;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+
+.aqua-gradient {
+  background: linear-gradient(40deg, #2096ff, #05ffa3) !important;
+}
+
+.testimonial-card .avatar {
+  width: 120px;
+  margin-top: -60px;
+  overflow: hidden;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}

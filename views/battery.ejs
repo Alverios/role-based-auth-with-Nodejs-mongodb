@@ -1,0 +1,102 @@
+<%- include('./layouts/header') %>
+<div class="container-fluid p-5">
+    <div class="row mb-0 pb-0">
+        <div class="col-lg-3 col-md-12 mb-2">
+            <div class="card border-dark">
+                <div class="card-header border-dark">
+                    <h4 class="card-title text-center">Battery Shop</h4>
+                </div>
+                <div class="card-body p-4">
+                    <form class="mb-3">
+                        <label for="example-text-input" class="form-label">Full Name</label>
+                        <input class="form-control mb-2 border border-dark" type="text" value="" placeholder="Full Name"
+                            id="example-text-input">
+
+                        <label for="example-password-input" class="form-label">Number Plate</label>
+                        <input class="form-control border border-dark" type="text" placeholder="Number Plate"
+                            id="example-password-input">
+
+                        <label for="example-password-input" class="form-label">NIN Number</label>
+                        <input class="form-control border border-dark" type="text" placeholder="NIN Number"
+                            id="example-password-input">
+
+                        <label class="form-label">Battery Size</label>
+                        <select class="form-select border border-dark">
+                            <option>24F</option>
+                            <option>27H</option>
+                            <option>34R</option>
+                            <option>H64</option>
+                        </select>
+
+                        <label for="example-email-input" class="form-label">Cost of Hire(UGX)</label>
+                        <input class="form-control border border-dark" type="text" placeholder="cost of Hire"
+                            id="example-email-input">
+                            </form>
+                            <button type="button" class="btn btn-success btn-lg w-100">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div> <!-- end col -->
+        <div class="col-lg-9 col-md-12">
+
+            <div class="card border-dark">
+                <div class="card-header border-dark">
+                    <h4 class="card-title text-center">Battery Shop Details</h4>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table align-middle table-striped mb-0 border-dark">
+
+                            <thead>
+                                <tr>
+                                    <th>Full Name</th>
+                                    <th>Number Plate</th>
+                                    <th>NIN Number</th>
+                                    <th>Battery Size</th>
+                                    <th>Cost of Hire</th>
+                                    <th>Options</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Debborah Atwine</th>
+                                    <th>UBG 873J</th>
+                                    <th>CF98376542JR</th>
+                                    <th>34R</th>
+                                    <th>40000</th>
+                                    <td class="justify-content-center">
+                                        <button type="button"
+                                            class="btn btn-danger btn-sm mb-1 w-xs">Delete</button>
+                                        <button type="button"
+                                            class="btn btn-dark btn-sm mb-1 w-xs">Edit</button>
+                                        <button type="button"
+                                            class="btn btn-success btn-sm mb-1 w-xs">View</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>General Chronnix</th>
+                                    <th>UBK 243E</th>
+                                    <th>CM92376542JH</th>
+                                    <th>33H</th>
+                                    <th>50000</th>
+                                    <td class="justify-content-center">
+                                        <button type="button"
+                                            class="btn btn-danger btn-sm mb-1 w-xs">Delete</button>
+                                        <button type="button"
+                                            class="btn btn-dark btn-sm mb-1 w-xs">Edit</button>
+                                        <button type="button"
+                                            class="btn btn-success btn-sm mb-1 w-xs">View</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- end card body -->
+            </div>
+            <!-- end card -->
+        </div>
+        <!-- end col -->
+    </div>
+</div>
+<%- include('./layouts/footer') %>

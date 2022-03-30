@@ -1,0 +1,102 @@
+<%- include('./layouts/header') %>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-12 mb-2">
+                <div class="card border-dark">
+                    <div class="card-header border-dark">
+                        <h4 class="card-title text-center">Bodas Sign In Form</h4>
+                    </div>
+                    <div class="card-body p-4">
+                        <form class="mb-3">
+                            <label for="example-text-input" class="form-label">Drivers Name</label>
+                            <input class="form-control mb-2 border-dark" type="text" value="" placeholder="Drivers Name"
+                                id="example-text-input">
+                            <label for="example-text-input" class="form-label">Number Plate</label>
+                            <input class="form-control mb-2 border-dark" type="text" value="" placeholder="Number Plate"
+                                id="example-text-input">
+                            <label for="example-text-input" class="form-label">Car Model/Make</label>
+                            <input class="form-control mb-2 border-dark" type="text" value="" placeholder="Car Model"
+                                id="example-text-input">
+                            <label for="example-text-input" class="form-label">Phone Number</label>
+                            <input class="form-control mb-2 border-dark" type="text" value=""
+                                placeholder="Phone Number(+256)" id="example-text-input">
+                            <label for="example-text-input" class="form-label">NIN Number</label>
+                            <input class="form-control mb-2 border-dark" type="text" value=""
+                                placeholder="National ID Number" id="example-text-input">
+                            <label class="form-label">Date</label>
+                            <input class="form-control mb-2 border-dark" type="date" placeholder="dd/mm/yyy"
+                                id="example-date-input">
+                            <label for="example-time-input" class="form-label">Time of Arrivval</label>
+                            <input class="form-control border-dark" type="time" value="13:45:00"
+                                id="example-time-input">
+                            <button type="button" class="btn btn-success btn-lg w-100 mt-3">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div> <!-- end col -->
+            <div class="col-lg-9 col-md-12">
+
+                <div class="card border-dark">
+                    <div class="card-header border-dark">
+                        <h4 class="card-title text-center">Bodas Signed In</h4>
+                    </div>
+                    <div class="card-body border-dark">
+                        <div class="table-responsive">
+                            <table class="table align-middle mb-0 border-dark">
+
+                                <thead>
+                                    <tr>
+                                        <th>Drivers Name</th>
+                                        <th>Number Plate</th>
+                                        <th>Car Model</th>
+                                        <th>Phone Number</th>
+                                        <th>NIN Number</th>
+                                        <th>Date</th>
+                                        <th>Time of Arriival</th>
+                                        <th>Options</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>MUGISHA FRANKLIN</th>
+                                        <th>UGD 301S</th>
+                                        <th>BAJJAJ BOXER</th>
+                                        <th>256772385328</th>
+                                        <th>CMJ48934895723L</th>
+                                        <th>03/09/2022</th>
+                                        <th>11.00</th>
+                                        <td class="justify-content-center">
+                                            <button type="button"
+                                                class="btn btn-danger btn-sm mb-1 w-xs">Delete</button>
+                                            <button type="button" class="btn btn-dark btn-sm mb-1 w-xs">Edit</button>
+                                            <button type="button" class="btn btn-success btn-sm mb-1 w-xs">View</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>MUGISHA FRANKLIN</th>
+                                        <th>UGD 301S</th>
+                                        <th>BAJJAJ BOXER</th>
+                                        <th>256772385328</th>
+                                        <th>CMJ48934895723L</th>
+                                        <th>03/09/2022</th>
+                                        <th>11.00</th>
+                                        <td class="justify-content-center">
+                                            <button type="button"
+                                                class="btn btn-danger btn-sm mb-1 w-xs">Delete</button>
+                                            <button type="button" class="btn btn-dark btn-sm mb-1 w-xs">Edit</button>
+                                            <button type="button" class="btn btn-success btn-sm mb-1 w-xs">View</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- end card body -->
+                </div>
+                <!-- end card -->
+            </div>
+            <!-- end col -->
+        </div>
+        <!-- end row -->
+    </div>
+    <%- include('./layouts/footer') %>
